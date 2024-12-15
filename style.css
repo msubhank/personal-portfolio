@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+  /* .navbar:hover a {
+    color: #0056b3;
+  }
+   */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar li a:hover {
+    color: #5252b4;
+  }
+  
+  /* Intro Section */
+  #nameSection {
+    background-color: #eaeaea;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 2.2em;
+    color: #555;
+  }
+  
+  .bold-name {
+    font-size: 3em;
+    color: #007BFF;
+  }
+  
+  .animate-name {
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* About Section */
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+  }
+  
+  .about-img img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-img img:hover {
+    transform: scale(1.05);
+  }
+  
+  .data {
+    max-width: 600px;
+  }
+  
+  .data .name {
+    font-size: 2.5em;
+    color: #007BFF;
+  }
+  
+  .prof {
+    font-size: 2.3em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .data p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  .data .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .data .cta:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Projects Section */
+  #project {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .head {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 30px;
+  }
+  
+  .allproject {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .proj1, .proj2 , .proj3 , .proj4{
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .projectimg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name {
+    font-size: 1.8em;
+    color: #007BFF;
+  }
+  /* project name  */
+  .prof {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .allproject {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-img img {
+      max-width: 200px;
+    }
+  }
+  
+  .githublink{
+    color: #007BFF;
+  }
+ 
+  /* Contact Section  */
+  #contact{
+      background-color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .head2{
+      font-size: 2em;
+      color: #007BFF;
+      margin-bottom: 30px;
+      
+    }
+
+    .dataC {
+      background-color: #d6d9db;
+      border: 2px solid grey;
+      border-radius:8px;
+      display: inline-block;
+      /* flex-direction: column; */
+      align-items: center;
+      gap: 20px;
+    }
+
+    .dataC h1.name {
+      padding: 10px;
+      font-size: 1.4em;
+      color: #333;
+      margin: 0;
+    }
+    
+    .dataC h2.prof {
+      padding: 10px;
+      font-size: 1.1em;
+      color: #555;
+      margin: 0;
+    }
+    
+    .dataC h2.prof a {
+      color: #555;
+      text-decoration: none;
+    }
+    
+    .dataC h2.prof a:hover {
+      text-decoration: underline;
+      color: #0056b3;
+    }
+    
